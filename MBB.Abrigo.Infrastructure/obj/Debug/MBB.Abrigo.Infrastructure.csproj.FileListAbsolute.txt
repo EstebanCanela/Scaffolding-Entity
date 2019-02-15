@@ -1,0 +1,16 @@
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\MBB.Abrigo.Infrastructure.dll.config
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\MBB.Abrigo.Infrastructure.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\MBB.Abrigo.Infrastructure.pdb
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\MBB.Abrigo.Core.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\MBB.Abrigo.Core.pdb
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\obj\Debug\MBB.Abrigo.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\obj\Debug\MBB.Abrigo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\obj\Debug\MBB.Abrigo.Infrastructure.csproj.CopyComplete
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\obj\Debug\MBB.Abrigo.Infrastructure.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\obj\Debug\MBB.Abrigo.Infrastructure.pdb
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Infrastructure\bin\Debug\es\EntityFramework.SqlServer.resources.dll
