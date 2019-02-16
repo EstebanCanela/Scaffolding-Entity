@@ -1,5 +1,6 @@
 # Scaffolding-Entity Framework
-Created a basic structured to a project in .Net with Entity Framework, Unit of Work, Repository Patter and Identity (AuthO)
+Created a basic structured to a project in .Net with Entity Framework, Unit of Work, Repository Patter and Identity (AuthO).
+
 To create a new CRUD for a Entity you must do:
 
 ## Step 1 
