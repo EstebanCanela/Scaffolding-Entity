@@ -27,8 +27,9 @@ namespace MBB.Abrigo.WebApi.Controllers
         
         // GET: api/Person/5
         [ResponseType(typeof(PersonDTO))]
-        public IHttpActionResult GetPerson(int id)
+        public IHttpActionResult GetPerson(string id)
         {
+            
             PersonDTO personDTO = personManager.FindById(id);
             if (personDTO == null)
             {
@@ -37,10 +38,10 @@ namespace MBB.Abrigo.WebApi.Controllers
 
             return Ok(personDTO);
         }
-        /*
+        
         // PUT: api/Person/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutPersonDTO(int id, PersonDTO personDTO)
+        public IHttpActionResult PutPersonDTO(string id, PersonDTO personDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -52,27 +53,9 @@ namespace MBB.Abrigo.WebApi.Controllers
                 return BadRequest();
             }
 
-            db.Entry(personDTO).State = EntityState.Modified;
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PersonDTOExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(personManager.Edit(personDTO));
         }
-
+        
         // POST: api/Person
         [ResponseType(typeof(PersonDTO))]
         public IHttpActionResult PostPersonDTO(PersonDTO personDTO)
@@ -82,40 +65,23 @@ namespace MBB.Abrigo.WebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.PersonDTOes.Add(personDTO);
-            db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = personDTO.Id }, personDTO);
+            return Ok(personManager.Add(personDTO));
         }
-
+        
         // DELETE: api/Person/5
         [ResponseType(typeof(PersonDTO))]
-        public IHttpActionResult DeletePersonDTO(int id)
+        public IHttpActionResult DeletePersonDTO(string id)
         {
-            PersonDTO personDTO = db.PersonDTOes.Find(id);
-            if (personDTO == null)
+            
+            if (id != null)
             {
-                return NotFound();
+                return Ok(personManager.Remove(id));
             }
-
-            db.PersonDTOes.Remove(personDTO);
-            db.SaveChanges();
-
-            return Ok(personDTO);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
+            else
             {
-                db.Dispose();
+                return BadRequest();
             }
-            base.Dispose(disposing);
         }
-
-        private bool PersonDTOExists(int id)
-        {
-            return db.PersonDTOes.Count(e => e.Id == id) > 0;
-        }*/
+        
     }
 }

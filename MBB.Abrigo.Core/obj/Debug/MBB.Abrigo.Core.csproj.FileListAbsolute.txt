@@ -4,3 +4,9 @@ C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Cor
 C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.dll
 C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.pdb
 C:\Users\Canela\source\repos\MBB.Abrigo\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.csprojAssemblyReference.cache
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\bin\Debug\MBB.Abrigo.Core.dll
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\bin\Debug\MBB.Abrigo.Core.pdb
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.csprojAssemblyReference.cache
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.csproj.CoreCompileInputs.cache
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.dll
+C:\Users\Canela\Documents\GitHub\Scaffolding-Entity\MBB.Abrigo.Core\obj\Debug\MBB.Abrigo.Core.pdb

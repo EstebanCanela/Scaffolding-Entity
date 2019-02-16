@@ -35,17 +35,82 @@ namespace MBB.Abrigo.Infrastructure.Managers
             return aux;
         }
 
-        public void Add(PersonDTO p)
+        public string Add(PersonDTO p)
         {
-            throw new NotImplementedException();
+            if(p != null)
+            {
+                var paramsNull = checkParamsToPerson(p);
+                if (paramsNull != "0")
+                {
+                    return paramsNull;
+                }
+
+                Person insertPerson = new Person()
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    FirstName = p.FirstName,
+                    LastName = p.LastName,
+                    Age = p.Age
+                };
+                uOfW.PersonRepository.Add(insertPerson);
+                uOfW.Save();
+                return "Person has benn created";
+            }
+            else
+            {
+                return "Error created Person";
+            }
         }
 
-        public void Edit(PersonDTO p)
+        private string checkParamsToPerson(PersonDTO p)
         {
-            throw new NotImplementedException();
+            if (p.FirstName == null)
+            {
+                return "FirstName is null";
+            }
+
+            if (p.LastName == null)
+            {
+                return "LastName is null";
+            }
+
+            if (p.Age <= 0 )
+            {
+                return "Age <= 0";
+            }
+
+            return "0";
         }
 
-        public PersonDTO FindById(int Id)
+        public string Edit(PersonDTO p)
+        {
+
+            if(p != null)
+            {
+                var paramsNull = checkParamsToPerson(p);
+                if (paramsNull != "0")
+                {
+                    return paramsNull;
+                }
+
+                Person insertPerson = new Person()
+                {
+                    Id = p.Id,
+                    FirstName = p.FirstName,
+                    LastName = p.LastName,
+                    Age = p.Age
+                };
+                uOfW.PersonRepository.Edit(insertPerson);
+                uOfW.Save();
+                return "Person has benn modified";
+            }
+            else
+            {
+                return "Person is null";
+            }
+        }
+
+        public PersonDTO FindById(string Id)
         {
             Person auxPerson = uOfW.PersonRepository.FindById(Id);
             return new PersonDTO()
@@ -64,9 +129,19 @@ namespace MBB.Abrigo.Infrastructure.Managers
 
         }
 
-        public void Remove(int Id)
+        public string Remove(string Id)
         {
-            throw new NotImplementedException();
+            Person personToRemove = uOfW.PersonRepository.FindById(Id);
+            if(personToRemove != null)
+            {
+                uOfW.PersonRepository.Remove(Id);
+                uOfW.Save();
+                return "Person has been removed";
+            }
+            else
+            {
+                return "Person no exists";
+            }
         }
     }
 }

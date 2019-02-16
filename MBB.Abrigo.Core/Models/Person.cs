@@ -10,7 +10,7 @@ namespace MBB.Abrigo.Core.Models
     public class Person
     {
         
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Required]
         [MaxLength(50)]

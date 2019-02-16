@@ -10,9 +10,9 @@ namespace MBB.Abrigo.Infrastructure.IRepository
     {
         void Add(TEntity p);
         void Edit(TEntity p);
-        void Remove(int Id);
+        void Remove(string Id);
         IEnumerable<TEntity> GetAll();
-        TEntity FindById(int Id);
+        TEntity FindById(string Id);
 
     }
 }

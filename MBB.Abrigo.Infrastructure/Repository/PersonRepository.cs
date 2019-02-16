@@ -29,7 +29,7 @@ namespace MBB.Abrigo.Infrastructure.Repository
             context.Entry(p).State = System.Data.Entity.EntityState.Modified;
         }
 
-        public Person FindById(int Id)
+        public Person FindById(string Id)
         {
             var result = (from r in context.Persons where r.Id == Id select r).FirstOrDefault();
             return result;
@@ -40,11 +40,11 @@ namespace MBB.Abrigo.Infrastructure.Repository
             return context.Persons;
         }
 
-        public void Remove(int Id)
+        public void Remove(string Id)
         {
             Person p = context.Persons.Find(Id);
             context.Persons.Remove(p);
-            context.SaveChanges();
+            //context.SaveChanges();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace MBB.Abrigo.Infrastructure
         {
             context.Persons.Add(new Person
             {
-                Id = 1,
+                Id = "1",
                 FirstName = "Esteban",
                 LastName = "Federico",
                 Age = 18

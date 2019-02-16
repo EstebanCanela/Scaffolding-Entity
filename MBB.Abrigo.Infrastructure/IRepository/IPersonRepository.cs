@@ -9,8 +9,8 @@ namespace MBB.Abrigo.Infrastructure.IRepository
     {
         new void Add(Person p);
         new void Edit(Person p);
-        new void Remove(int Id);
+        new void Remove(string Id);
         new IEnumerable<Person> GetAll();
-        new Person FindById(int Id);
+        new Person FindById(string Id);
     }
 }

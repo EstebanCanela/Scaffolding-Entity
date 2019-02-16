@@ -8,10 +8,10 @@ namespace MBB.Abrigo.Infrastructure.IManagers
 {
     public interface IGenericManager<TEntity> where TEntity : class
     {
-        void Add(TEntity p);
-        void Edit(TEntity p);
-        void Remove(int Id);
+        string Add(TEntity p);
+        string Edit(TEntity p);
+        string Remove(string Id);
         IEnumerable<TEntity> GetAll();
-        TEntity FindById(int Id);
+        TEntity FindById(string Id);
     }
 }
