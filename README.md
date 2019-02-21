@@ -72,8 +72,11 @@ public class PersonController : ApiController
 }
 ```
 
-## Step 8 - Security
-Install by console  `PM> Install-Package System.IdentityModel.Tokens.Jwt` after that create.
+## Step 8 - Security JWT
+![Alt Text](https://camo.githubusercontent.com/5871e9f0234542cd89bab9b9c100b20c9eb5b789/68747470733a2f2f63646e2e61757468302e636f6d2f636f6e74656e742f6a77742f6a77742d6469616772616d2e706e67)
+
+
+First install by console  `PM> Install-Package System.IdentityModel.Tokens.Jwt` after that create.
 
 
 ### Step 8.1
