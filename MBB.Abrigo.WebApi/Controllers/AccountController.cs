@@ -373,6 +373,39 @@ namespace MBB.Abrigo.WebApi.Controllers
             return Ok();
         }
 
+        // POST api/Account/Login
+        [AllowAnonymous]
+        [Route("Login")]
+        public async Task<IHttpActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await UserManager.FindByEmailAsync(model.Username);
+            
+            if (user != null)
+            {
+                if (UserManager.CheckPassword(user, model.Password))
+                {
+                    var token = TokenGenerator.GenerateTokenJwt(model.Username);
+                    return Ok(token);
+                }
+                else
+                {
+                   return Unauthorized();
+                }
+            }
+            else
+            {
+                return Unauthorized();
+
+            }
+        }
+
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && _userManager != null)
