@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
 
-namespace MBB.Abrigo.WebApi.Models
+namespace MBB.Abrigo.Core.Models
 {
     // Modelos usados como parámetros para las acciones de AccountController.
 

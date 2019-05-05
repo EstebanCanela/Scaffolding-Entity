@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MBB.Abrigo.WebApi.Models
+namespace MBB.Abrigo.Core.Models
 {
     // Modelos devueltos por las acciones de AccountController.
 

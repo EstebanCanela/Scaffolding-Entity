@@ -19,7 +19,7 @@ namespace MBB.Abrigo.WebApi.Controllers
         private PersonManager personManager = new PersonManager();
 
         // GET: api/Person
-        [Authorize]
+        //[Authorize]
         public IEnumerable<PersonDTO> GetPersons()
         {
             return personManager.GetAll();

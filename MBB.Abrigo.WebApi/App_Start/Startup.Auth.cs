@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using MBB.Abrigo.WebApi.Providers;
-using MBB.Abrigo.WebApi.Models;
+using MBB.Abrigo.Core.Models;
 
 namespace MBB.Abrigo.WebApi
 {
